@@ -1,7 +1,7 @@
 package t_040_459_repeated_substring_pattern
 
 import (
-	t "github.com/biandc/ti_gr/src/t_039_28_find_the_index_of_the_first_occurrence_in_a_string"
+	t "github.com/bianzhishui/ti_gr/src/t_039_28_find_the_index_of_the_first_occurrence_in_a_string"
 )
 
 func repeatedSubstringPattern(s string) bool {

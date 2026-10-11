@@ -1,5 +1,3 @@
-module github.com/biandc/ti_gr
+module github.com/bianzhishui/ti_gr
 
-go 1.19
-
-
+go 1.25.5

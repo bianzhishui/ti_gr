@@ -1,7 +1,7 @@
 package t_035_541_reverse_string_ii
 
 import (
-	trs "github.com/biandc/ti_gr/src/t_034_344_reverse_string"
+	trs "github.com/bianzhishui/ti_gr/src/t_034_344_reverse_string"
 )
 
 func reverseStr(s string, k int) string {
