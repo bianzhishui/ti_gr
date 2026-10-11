@@ -18,7 +18,7 @@ func (this *MyStack) Pop() int {
 	if this.Empty() {
 		return 0
 	}
-	l := len(this.queue)-1
+	l := len(this.queue) - 1
 	for l > 0 {
 		this.Push(this.queue[0])
 		this.queue = this.queue[1:]

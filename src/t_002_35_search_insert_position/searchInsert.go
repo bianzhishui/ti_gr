@@ -3,7 +3,7 @@ package t_002_35_search_insert_position
 // 循环遍历
 func searchInsert(nums []int, target int) int {
 	var i = 0
-	for ; i < len(nums); {
+	for i < len(nums) {
 		if target == nums[i] {
 			return i
 		} else if target < nums[i] {

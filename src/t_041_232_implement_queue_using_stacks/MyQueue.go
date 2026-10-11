@@ -40,7 +40,7 @@ func (this *MyQueue) Peek() int {
 			l = len(this.inStack)
 		}
 	}
-	ret:=this.outStack[len(this.outStack)-1]
+	ret := this.outStack[len(this.outStack)-1]
 	return ret
 }
 

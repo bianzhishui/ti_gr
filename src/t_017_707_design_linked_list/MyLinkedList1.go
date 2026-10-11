@@ -175,15 +175,14 @@ func (this *MyLinkedList1) GetMyLinkedListLen() int {
 	return this.Lens
 }
 
-
-func (this *MyLinkedList1) PrintMyLinkedList()[]int{
+func (this *MyLinkedList1) PrintMyLinkedList() []int {
 	l := this.Lens
-	thisList := make([]int ,0,l)
+	thisList := make([]int, 0, l)
 	node := this.Header
-	for node.Next!=nil{
-		thisList=append(thisList,node.Val)
-		node=node.Next
+	for node.Next != nil {
+		thisList = append(thisList, node.Val)
+		node = node.Next
 	}
-	thisList=append(thisList,node.Val)
+	thisList = append(thisList, node.Val)
 	return thisList
 }

@@ -103,7 +103,7 @@ func (my *MyLinkedList) GetMyLinkedListLen() int {
 }
 
 // PrintMyLinkedList 将链表转化为数组输出
-func (my *MyLinkedList) PrintMyLinkedList() []int{
+func (my *MyLinkedList) PrintMyLinkedList() []int {
 	virHead := my.Node
 	listLen := my.GetMyLinkedListLen()
 	myList := make([]int, 0, listLen)

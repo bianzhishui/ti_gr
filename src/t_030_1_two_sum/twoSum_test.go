@@ -9,7 +9,7 @@ func TestTwoSum(t *testing.T) {
 	var (
 		nums     = []int{2, 7, 11, 15}
 		target   = 9
-		expected = []int{0,1}
+		expected = []int{0, 1}
 		actual   []int
 	)
 

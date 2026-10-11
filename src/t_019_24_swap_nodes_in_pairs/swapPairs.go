@@ -1,7 +1,5 @@
 package t_019_24_swap_nodes_in_pairs
 
-
-
 type ListNode struct {
 	Val  int
 	Next *ListNode
