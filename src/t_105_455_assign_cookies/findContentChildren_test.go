@@ -15,8 +15,8 @@ func TestFindContentChildren(t *testing.T) {
 	actual = findContentChildren(g, s)
 	logprint := fmt.Sprintf("expected=%v, actual=%v", expected, actual)
 	if expected == actual {
-		t.Logf(logprint)
+		t.Log(logprint)
 	} else {
-		t.Fatalf(logprint)
+		t.Fatal(logprint)
 	}
 }

@@ -18,8 +18,8 @@ func TestPartition(t *testing.T) {
 	actual = partition(s)
 	logstr := fmt.Sprintf("expected=%v, actual=%v", expected, actual)
 	if reflect.DeepEqual(expected, actual) {
-		t.Logf(logstr)
+		t.Log(logstr)
 	} else {
-		t.Fatalf(logstr)
+		t.Fatal(logstr)
 	}
 }

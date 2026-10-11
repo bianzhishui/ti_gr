@@ -14,8 +14,8 @@ func TestWiggleMaxLength(t *testing.T) {
 	actual = wiggleMaxLength(nums)
 	logprint := fmt.Sprintf("expected=%v, actual=%v", expected, actual)
 	if expected == actual {
-		t.Logf(logprint)
+		t.Log(logprint)
 	} else {
-		t.Fatalf(logprint)
+		t.Fatal(logprint)
 	}
 }

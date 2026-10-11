@@ -24,8 +24,8 @@ func TestFindSubsequences(t *testing.T) {
 	actual = findSubsequences(nums)
 	logprint := fmt.Sprintf("expected=%v, actual=%v", expected, actual)
 	if reflect.DeepEqual(expected, actual) {
-		t.Logf(logprint)
+		t.Log(logprint)
 	} else {
-		t.Fatalf(logprint)
+		t.Fatal(logprint)
 	}
 }

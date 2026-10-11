@@ -34,8 +34,8 @@ func TestSolveSudoku(t *testing.T) {
 	solveSudoku(board)
 	logprint := fmt.Sprintf("expected=%v, actual=%v", expected, board)
 	if reflect.DeepEqual(expected, board) {
-		t.Logf(logprint)
+		t.Log(logprint)
 	} else {
-		t.Fatalf(logprint)
+		t.Fatal(logprint)
 	}
 }
