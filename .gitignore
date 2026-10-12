@@ -1,2 +1,5 @@
 .idea/
 .vscode/
+
+# 非本仓库内容：外部工具链（Rust flycheck）在工作区变动时自动重建的目录
+target/
