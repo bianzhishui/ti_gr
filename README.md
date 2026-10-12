@@ -169,8 +169,68 @@ LeetCode 刷题仓库，纯 Go 实现，**无第三方依赖**。
 
 ## problems2 —— 第二轮（进行中）
 
-### 动态规划
+共 34 题，按子类型分组。
+
+### 核心线性 DP（LIS / LCS / 编辑距离）
+
+| 目录 | 题目 |
+| --- | --- |
+| `t_002_300_longest_increasing_subsequence` | 300. 最长递增子序列 |
+| `t_003_673_number_of_longest_increasing_subsequence` | 673. 最长递增子序列的个数 |
+| `t_004_354_russian_doll_envelopes` | 354. 俄罗斯套娃信封问题 |
+| `t_005_1143_longest_common_subsequence` | 1143. 最长公共子序列 |
+| `t_006_1035_uncrossed_lines` | 1035. 不相交的线 |
+| `t_007_583_delete_operation_for_two_strings` | 583. 两个字符串的删除操作 |
+| `t_008_72_edit_distance` | 72. 编辑距离 |
+| `t_009_115_distinct_subsequences` | 115. 不同的子序列 |
+| `t_010_392_is_subsequence` | 392. 判断子序列 |
+
+### 打家劫舍与子数组 / 子串型
+
+| 目录 | 题目 |
+| --- | --- |
+| `t_011_198_house_robber` | 198. 打家劫舍 |
+| `t_012_213_house_robber_ii` | 213. 打家劫舍 II |
+| `t_013_337_house_robber_iii` | 337. 打家劫舍 III |
+| `t_014_53_maximum_subarray` | 53. 最大子数组和 |
+| `t_015_674_longest_continuous_increasing_subsequence` | 674. 最长连续递增序列 |
+| `t_016_718_maximum_length_of_repeated_subarray` | 718. 最长重复子数组 |
+
+### 股票买卖（状态机线性 DP）
+
+| 目录 | 题目 |
+| --- | --- |
+| `t_017_309_best_time_to_buy_and_sell_stock_with_cooldown` | 309. 买卖股票的最佳时机含冷冻期 |
+| `t_018_714_best_time_to_buy_and_sell_stock_with_transaction_fee` | 714. 买卖股票的最佳时机含手续费 |
+| `t_019_123_best_time_to_buy_and_sell_stock_iii` | 123. 买卖股票的最佳时机 III |
+| `t_020_188_best_time_to_buy_and_sell_stock_iv` | 188. 买卖股票的最佳时机 IV |
+
+### 其他经典线性 DP
 
 | 目录 | 题目 |
 | --- | --- |
 | `t_001_377_combination_sum_iv` | 377. 组合总和 Ⅳ |
+| `t_021_91_decode_ways` | 91. 解码方法 |
+| `t_022_639_decode_ways_ii` | 639. 解码方法 II |
+| `t_023_446_arithmetic_slices_ii_subsequence` | 446. 等差数列划分 II - 子序列 |
+| `t_024_139_word_break` | 139. 单词拆分 |
+| `t_025_70_climbing_stairs` | 70. 爬楼梯 |
+| `t_026_746_min_cost_climbing_stairs` | 746. 使用最小花费爬楼梯 |
+| `t_027_509_fibonacci_number` | 509. 斐波那契数 |
+
+### 区间 DP
+
+| 目录 | 题目 |
+| --- | --- |
+| `t_028_312_burst_balloons` | 312. 戳气球 |
+| `t_029_1000_minimum_cost_to_merge_stones` | 1000. 合并石头的最低成本 |
+| `t_030_516_longest_palindromic_subsequence` | 516. 最长回文子序列 |
+| `t_031_1039_minimum_score_triangulation_of_polygon` | 1039. 多边形三角剖分的最低得分 |
+
+### 划分型 DP
+
+| 目录 | 题目 |
+| --- | --- |
+| `t_032_132_palindrome_partitioning_ii` | 132. 分割回文串 II |
+| `t_033_1043_partition_array_for_maximum_sum` | 1043. 分隔数组以得到最大和 |
+| `t_034_2911_minimum_changes_to_make_k_semi_palindromes` | 2911. 得到 K 个半回文串的最少修改次数 |
