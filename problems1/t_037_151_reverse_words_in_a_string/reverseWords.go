@@ -1,7 +1,7 @@
 package t_037_151_reverse_words_in_a_string
 
 import (
-	trs "github.com/bianzhishui/ti_gr/src/t_034_344_reverse_string"
+	trs "github.com/bianzhishui/ti_gr/problems1/t_034_344_reverse_string"
 )
 
 func reverseWords(s string) string {

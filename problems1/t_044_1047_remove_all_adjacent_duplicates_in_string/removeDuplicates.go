@@ -1,7 +1,7 @@
 package t_044_1047_remove_all_adjacent_duplicates_in_string
 
 import (
-	t "github.com/bianzhishui/ti_gr/src/t_043_20_valid_parentheses"
+	t "github.com/bianzhishui/ti_gr/problems1/t_043_20_valid_parentheses"
 )
 
 func removeDuplicates(s string) string {
