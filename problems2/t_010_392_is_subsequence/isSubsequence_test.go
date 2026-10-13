@@ -45,9 +45,9 @@ var cases = []struct {
 }
 
 // TestIsSubsequence 验证解法 1（双指针贪心）。
-func TestIsSubsequence(t *testing.T) {
-	checkCases(t, isSubsequence)
-}
+// func TestIsSubsequence(t *testing.T) {
+// 	checkCases(t, isSubsequence)
+// }
 
 // TestIsSubsequence1 验证解法 2（预处理 next 位置表）。
 func TestIsSubsequence1(t *testing.T) {

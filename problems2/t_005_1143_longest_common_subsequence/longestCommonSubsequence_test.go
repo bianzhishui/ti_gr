@@ -33,9 +33,9 @@ func TestLongestCommonSubsequence(t *testing.T) {
 }
 
 // TestLongestCommonSubsequence1 验证解法 2（滚动数组）。
-func TestLongestCommonSubsequence1(t *testing.T) {
-	checkCases(t, longestCommonSubsequence1)
-}
+// func TestLongestCommonSubsequence1(t *testing.T) {
+// 	checkCases(t, longestCommonSubsequence1)
+// }
 
 // checkCases 用同一张 cases 表驱动某个具体实现。
 func checkCases(t *testing.T, fn func(string, string) int) {

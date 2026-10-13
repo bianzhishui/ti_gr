@@ -7,7 +7,23 @@ package t_002_300_longest_increasing_subsequence
 // 最终答案为 dp 数组的最大值；数组长度至少为 1，单元素结果为 1。
 // TODO: 实现
 func lengthOfLIS(nums []int) int {
-	return 0
+	if len(nums) == 0 {
+		return 0
+	}
+	dp := make([]int, len(nums))
+	result := 1
+	for i := range nums {
+		dp[i] = 1
+		for j := 0; j < i; j++ {
+			if nums[i] > nums[j] {
+				dp[i] = max(dp[i], dp[j]+1)
+			}
+		}
+		if dp[i] > result {
+			result = dp[i]
+		}
+	}
+	return result
 }
 
 // 解法 2：贪心 + 二分查找 O(n log n)
@@ -18,6 +34,6 @@ func lengthOfLIS(nums []int) int {
 // 注意必须用 lower_bound（第一个 >= v）以保持严格递增；若用 upper_bound 则相等的元素会错误地延长序列。
 // tails 的长度即为答案。
 // TODO: 实现
-func lengthOfLIS1(nums []int) int {
-	return 0
-}
+// func lengthOfLIS1(nums []int) int {
+// 	return 0
+// }

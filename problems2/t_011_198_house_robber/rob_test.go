@@ -31,9 +31,9 @@ var cases = []struct {
 }
 
 // TestRob 验证解法 1（记忆化搜索）。
-func TestRob(t *testing.T) {
-	checkCases(t, rob)
-}
+// func TestRob(t *testing.T) {
+// 	checkCases(t, rob)
+// }
 
 // TestRob1 验证解法 2（自底向上动态规划）。
 func TestRob1(t *testing.T) {

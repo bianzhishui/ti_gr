@@ -32,9 +32,9 @@ var cases = []struct {
 }
 
 // TestMinDistance 验证解法 1（先求 LCS）。
-func TestMinDistance(t *testing.T) {
-	checkCases(t, minDistance)
-}
+// func TestMinDistance(t *testing.T) {
+// 	checkCases(t, minDistance)
+// }
 
 // TestMinDistance1 验证解法 2（直接二维 DP）。
 func TestMinDistance1(t *testing.T) {

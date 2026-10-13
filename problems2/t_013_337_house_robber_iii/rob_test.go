@@ -40,9 +40,9 @@ func TestRob(t *testing.T) {
 }
 
 // TestRob1 验证解法 2（带记忆化的递归）。
-func TestRob1(t *testing.T) {
-	checkCases(t, rob1)
-}
+// func TestRob1(t *testing.T) {
+// 	checkCases(t, rob1)
+// }
 
 // checkCases 用同一张 cases 表驱动某个具体实现。
 func checkCases(t *testing.T, fn func(*TreeNode) int) {

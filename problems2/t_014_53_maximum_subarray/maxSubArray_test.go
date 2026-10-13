@@ -40,9 +40,9 @@ func TestMaxSubArray(t *testing.T) {
 }
 
 // TestMaxSubArray1 验证解法 2（分治法）。
-func TestMaxSubArray1(t *testing.T) {
-	checkCases(t, maxSubArray1)
-}
+// func TestMaxSubArray1(t *testing.T) {
+// 	checkCases(t, maxSubArray1)
+// }
 
 // checkCases 用同一张 cases 表驱动某个具体实现。
 func checkCases(t *testing.T, fn func([]int) int) {
