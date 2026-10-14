@@ -169,7 +169,7 @@ LeetCode 刷题仓库，纯 Go 实现，**无第三方依赖**。
 
 ## problems2 —— 第二轮（进行中）
 
-共 34 题，按子类型分组。
+共 35 题，按子类型分组。
 
 ### 核心线性 DP（LIS / LCS / 编辑距离）
 
@@ -234,3 +234,10 @@ LeetCode 刷题仓库，纯 Go 实现，**无第三方依赖**。
 | `t_032_132_palindrome_partitioning_ii` | 132. 分割回文串 II |
 | `t_033_1043_partition_array_for_maximum_sum` | 1043. 分隔数组以得到最大和 |
 | `t_034_2911_minimum_changes_to_make_k_semi_palindromes` | 2911. 得到 K 个半回文串的最少修改次数 |
+
+### 其他来源（ACM / 标准输入输出型）
+
+| 目录 | 题目 |
+| --- | --- |
+| `t_035_hwod_social_distance` | 华为OD C卷 · 社交距离 |
+
