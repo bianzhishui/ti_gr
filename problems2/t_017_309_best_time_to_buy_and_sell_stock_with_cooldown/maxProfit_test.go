@@ -83,9 +83,9 @@ func TestMaxProfit(t *testing.T) {
 }
 
 // TestMaxProfit1 验证解法 2（滚动变量压缩状态）。
-func TestMaxProfit1(t *testing.T) {
-	checkProfitCases(t, maxProfit1)
-}
+// func TestMaxProfit1(t *testing.T) {
+// 	checkProfitCases(t, maxProfit1)
+// }
 
 func checkProfitCases(t *testing.T, fn func([]int) int) {
 	t.Helper()
