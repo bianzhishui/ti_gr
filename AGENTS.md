@@ -43,6 +43,8 @@ problems1/t_001_704_binary_search/
 - **三位序号是顺序编号，不是题号**：`t_001_704_binary_search` = 第 1 题、LeetCode 704。
 - **序号每轮独立编号**：`problems2/` 从 `t_001` **重新开始**，不与 `problems1/` 连续。因此两轮可能出现形近同名的目录（如 `problems1/t_001_704_binary_search` 与 `problems2/t_001_......`），**靠 `problemsN/` 目录区分**，在根 README 索引中登记时注意标注轮次。
 - 题号用 LeetCode 官方数字；剑指 Offer 类用题集标识，如 `t_036_offer05_...`、`t_038_offer58ii_...`。
+- **非 LeetCode 来源**（华为OD、牛客等）也把来源压成**单个 token** 放在同一个位置上，例如华为OD 用 `hwod`：`t_035_hwod_social_distance`。
+  **不要把来源写成 `od_c` 这类带下划线的形式**——多出来的下划线会让「来源」与「题目名」的字段边界混淆。卷别/批次（如 C 卷）写进该题自己的 README，不进目录名。
 - 题目名用 snake_case。
 - `t_999_` 前缀留给非 LeetCode 的杂项（如 `problems1/t_999_lru`）。
 - 根 `README.md` 的索引里前两条写作 `t_01` / `t_02`，与实际目录 `t_001` / `t_002` 不一致——**以目录为准**，新条目按三位补零书写。
@@ -50,7 +52,7 @@ problems1/t_001_704_binary_search/
 ## 代码约定
 
 - **包名 = 目录名**，例如 `package t_001_704_binary_search`。
-  唯一例外：`problems1/t_999_lru` 是 `package main` 的可执行示例。
+  例外是可执行 / ACM 型题目，用 `package main`（见下文「ACM / 标准输入输出型题目」）：`problems1/t_999_lru`、`problems2/t_035_hwod_social_distance`。
 - 解法函数**默认不导出**（首字母小写），如 `search`、`minSubArrayLen`。
 - **一题多解**：同一题的不同思路并列写在同一文件里，按由浅入深排列，**最基础的实现不带后缀**，后续用数字后缀：
 
@@ -73,6 +75,20 @@ problems1/t_001_704_binary_search/
 - **每道题默认建多个解法骨架**，数量按该题**实际可行的思路数**决定（通常 2–3 个）。不要为凑数加入不可行的思路（例如在 `target <= 1000` 的约束下写指数级暴力解）。
 - **需要导出的例外**：设计类题目要按判题要求导出构造器与方法（`Constructor()`、`Constructor1()`、`NewStack()`、`GetLRUCache()`、`StrStr()` 等）；被其它包复用的工具函数也必须导出（`ReverseString`、`GetNext`）。
 - 注释使用**中文**，说明思路与边界条件。可参考 `problems1/t_001_704_binary_search/search.go`。
+
+## ACM / 标准输入输出型题目
+
+华为OD、牛客等来源的题目是**标准输入输出型**，与 LeetCode 函数型不同，按下面约定产出：
+
+- 文件用 `main.go` + `main_test.go`，声明 **`package main`**
+  （这是「包名 = 目录名」的**第二条例外**，第一条例外是 `problems1/t_999_lru`）
+- `main.go` 包含三部分：
+  1. `parseInput`——**需要实现**：解析 stdin，兼容 `[1,2,3]`、`1 2 3`、`[1, 2, 3]`、有无结尾换行等写法
+  2. `main`——**需要实现**：读 stdin、调解法、写 stdout
+  3. 多个解法骨架——**不要实现**，同 LeetCode 题一样只留思路注释与 `TODO`
+- 测试直接测内部解法函数与 `parseInput`（`package main` 同样能正常 `go test`）
+- ⚠️ **不要执行 `go build ./problems2/<目录>/`**：单个 main 包会把二进制写到**当前目录**（即仓库根）污染工作区——`problems1/t_999_lru` 那个误建文件就是这么来的。需要构建时用 `go run` 或 `go build -o /dev/null`
+- 题面若来自 JS 渲染的页面（如牛客），README 末尾要加一条**来源说明**，写明正文由哪些镜像源还原、哪些内容是按规则补全的
 
 ## 跨包引用
 
@@ -195,7 +211,7 @@ go test ./...   # 应全绿
 
 | 位置 | 问题 |
 |---|---|
-| `problems1/t_999_lru/lru.go` | 全仓库唯一的 `package main` 命令（含 `func main`），无 README、无测试 |
+| `problems1/t_999_lru/lru.go` | `package main` 命令（含 `func main`），无 README、无测试 |
 | 根 `README.md` | 索引仅 105 条，缺 `t_106_376_wiggle_subsequence` 与 `t_999_lru`；前两条写作 `t_01` / `t_02` 与目录不符 |
 | 上述 2 个测试文件 | 残留 `func main()` 调试代码 |
 | 定期出现 | 工作区可能被外部工具重建出空的 `target/` 目录 |
