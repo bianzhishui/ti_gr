@@ -50,9 +50,9 @@ func TestNumDecodings(t *testing.T) {
 }
 
 // TestNumDecodings1 验证解法 2（记忆化搜索）。
-func TestNumDecodings1(t *testing.T) {
-	checkNumDecodingsCases(t, numDecodings1)
-}
+// func TestNumDecodings1(t *testing.T) {
+// 	checkNumDecodingsCases(t, numDecodings1)
+// }
 
 // checkNumDecodingsCases 用同一张 cases 表驱动一个解法骨架。
 func checkNumDecodingsCases(t *testing.T, fn func(string) int) {

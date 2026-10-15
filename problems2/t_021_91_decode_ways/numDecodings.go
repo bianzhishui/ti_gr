@@ -14,6 +14,6 @@ func numDecodings(s string) int {
 // 否则累加「单独解码 s[i]」与「组合解码 s[i:i+2]（合法时）」两条分支的结果。
 // 用 memo 数组缓存已经算过的下标，避免同一下标被反复展开。
 // TODO: 实现
-func numDecodings1(s string) int {
-	return 0
-}
+// func numDecodings1(s string) int {
+// 	return 0
+// }
