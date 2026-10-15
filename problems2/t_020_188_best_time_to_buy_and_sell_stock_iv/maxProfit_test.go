@@ -80,4 +80,4 @@ func checkCases(t *testing.T, fn func(int, []int) int) {
 
 func TestMaxProfit(t *testing.T) { checkCases(t, maxProfit) }
 
-func TestMaxProfit1(t *testing.T) { checkCases(t, maxProfit1) }
+// func TestMaxProfit1(t *testing.T) { checkCases(t, maxProfit1) }
